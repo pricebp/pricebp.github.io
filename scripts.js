@@ -30,7 +30,6 @@ const handleOnMove = e => {
   }
 }
 
-/* -- Had to add extra lines for touch events -- */
 
 window.onmousedown = e => handleOnDown(e);
 
@@ -43,3 +42,5 @@ window.ontouchend = e => handleOnUp(e.touches[0]);
 window.onmousemove = e => handleOnMove(e);
 
 window.ontouchmove = e => handleOnMove(e.touches[0]);
+
+// why wont this work
